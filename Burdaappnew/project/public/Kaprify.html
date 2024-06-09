@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaprify</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="burda.html">Burda</a></li>
+                <li><a href="nase_songy.html">Naše Songy</a></li>
+                <li><a href="nase_ples.html">Naše Pleš</a></li>
+            </ul>
+        </nav>
+        <div id="user-info">
+            <span id="username"></span>
+        </div>
+    </header>
+    <main>
+        <h1>Vítejte na Kaprify</h1>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const username = new URLSearchParams(window.location.search).get('username');
+            if (username) {
+                document.getElementById("username").innerText = username;
+            }
+        });
+    </script>
+</body>
+</html>

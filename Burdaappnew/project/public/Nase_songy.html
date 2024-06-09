@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přihlašovací systém</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="burda.html">Burda</a></li>
+                <li><a href="nase_songy.html">Naše Songy</a></li>
+                <li><a href="nase_ples.html">Naše Pleš</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Přihlašovací systém</h1>
+        <div class="form-container">
+            <button id="showRegister">Vytvořit účet</button>
+            <button id="showLogin">Přihlásit se</button>
+        </div>
+        <div class="form-container" id="registerForm" style="display:none;">
+            <h2>Vytvořit účet</h2>
+            <input type="text" id="registerUsername" placeholder="Uživatelské jméno">
+            <input type="password" id="registerPassword" placeholder="Heslo">
+            <button id="registerButton">Vytvořit účet</button>
+            <p id="registerOutput"></p>
+        </div>
+        <div class="form-container" id="loginForm" style="display:none;">
+            <h2>Přihlásit se</h2>
+            <input type="text" id="loginUsername" placeholder="Uživatelské jméno">
+            <input type="password" id="loginPassword" placeholder="Heslo">
+            <button id="loginButton">Přihlásit se</button>
+            <p id="loginOutput"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
